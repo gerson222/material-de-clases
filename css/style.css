@@ -98,3 +98,59 @@ h1 {
 #carrito li {
   margin-bottom: 10px;
 }
+
+.claro{
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.oscuro{
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* usuario */
+
+.columna {
+  text-align: center;
+}
+
+.foto-perfil {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.lista-cursos,
+.enlaces-adicionales {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.lista-cursos li,
+.enlaces-adicionales li {
+  margin-bottom: 10px;
+}
+
+.lista-cursos li a,
+.enlaces-adicionales li a {
+  text-decoration: none;
+}
+
+.border-5 {
+  border-width: 5px !important;
+}
+
+/* boton mi cuenta navbar */
+
+.dropdown-menu-center {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
