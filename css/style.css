@@ -113,6 +113,7 @@ h1 {
 
 .columna {
   text-align: center;
+  position: relative;
 }
 
 .foto-perfil {
@@ -147,10 +148,92 @@ h1 {
   border-width: 5px !important;
 }
 
-/* boton mi cuenta navbar */
+.separador {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #724b4b;
+}
 
-.dropdown-menu-center {
+.p-responsive {
+  padding: 1rem; /* Espaciado base */
+}
+
+.mt-responsive {
+  margin-top: 1rem; /* Margen superior base */
+}
+
+section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 575px) {
+  .separador {
+    position: relative;
+    top: 0;
+    height: 1px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dropdown-menu-center {
   left: 50% !important;
   transform: translateX(-50%) !important;
+  }
 }
+
+
+
+@media (min-width: 576px) {
+  .p-responsive {
+    padding: 1.5rem;
+  }
+  .mt-responsive {
+    margin-top: 1.5rem;
+  }
+  
+  .separador {
+    bottom: 0;
+    width: 1px;
+    margin-left: -1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-responsive {
+    padding: 2rem;
+  }
+  .mt-responsive {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .p-responsive {
+    padding: 3rem;
+  }
+  .mt-responsive {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .p-responsive {
+    padding: 4rem;
+  }
+  .mt-responsive {
+    margin-top: 4rem;
+  }
+}
+
+
+/* boton mi cuenta navbar */
+
+/* .dropdown-menu-center {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+} */
+
 
