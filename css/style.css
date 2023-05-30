@@ -113,7 +113,6 @@ h1 {
 
 .columna {
   text-align: center;
-  position: relative;
 }
 
 .foto-perfil {
@@ -148,13 +147,6 @@ h1 {
   border-width: 5px !important;
 }
 
-.separador {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #724b4b;
-}
-
 .p-responsive {
   padding: 1rem; /* Espaciado base */
 }
@@ -164,21 +156,12 @@ h1 {
 }
 
 section {
-  width: 90%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (max-width: 575px) {
-
-  .separador {
-    position: relative;
-    top: 0;
-    height: 1px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   .dropdown-menu-center {
   left: 50% !important;
@@ -187,6 +170,12 @@ section {
 
   .mt-sm-bt {
     margin-top: 1rem !important;
+  }
+  .col-sm-4 {
+    border-bottom: 1px solid #724b4b;
+    width: 90% !important;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -199,11 +188,9 @@ section {
   .mt-responsive {
     margin-top: 1.5rem;
   }
-  
-  .separador {
-    bottom: 0;
-    width: 1px;
-    margin-left: -1px;
+  .col-sm-4 {
+    border-right: 1px solid #724b4b;
+    margin-top: -2rem;
   }
 }
 
@@ -233,13 +220,3 @@ section {
     margin-top: 4rem;
   }
 }
-
-
-/* boton mi cuenta navbar */
-
-/* .dropdown-menu-center {
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-} */
-
-
