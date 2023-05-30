@@ -59,23 +59,3 @@ function registro(){
     }
 
 }
-
-function tema() {
-  var elementos = document.body.getElementsByTagName("*");
-
-  for (var i = 0; i < elementos.length; i++) {
-    var elemento = elementos[i];
-
-    // Verifica si el elemento contiene texto
-    if (elemento.classList.contains("oscuro")) {
-      // Si contiene texto, agrega la clase "claro" y remueve la clase "oscuro"
-      elemento.classList.add("claro");
-      elemento.classList.remove("oscuro");
-    } else {
-      // Si no contiene texto, agrega la clase "oscuro" y remueve la clase "claro"
-      elemento.classList.add("oscuro");
-      elemento.classList.remove("claro");
-    }
-  }
-}
-

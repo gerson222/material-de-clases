@@ -1,0 +1,18 @@
+<div class="dropdown">
+   <button class="dropbtn">Seleccionar página</button>
+   <div class="dropdown-content">
+     <a href="/pages/carritoCompras.html">Carrito de Compras</a>
+     <a href="index.html">Inicio</a>
+     <a href="login.html">Iniciar Sesión</a>
+     <a href="registro.html">Registro</a>
+     <a href="usuario.html">Usuario</a>
+   </div>
+ </div>
+ 
+ <script>
+   var dropdown = document.getElementsByClassName('dropdown-content')[0];
+   dropdown.addEventListener('click', function(event) {
+     event.stopPropagation();
+   });
+ </script>
+ 
