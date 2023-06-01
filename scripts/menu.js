@@ -1,10 +1,10 @@
 const currentLocation = window.location.pathname;
 
 // Obtener la ruta base del proyecto
-const basePath = currentLocation.endsWith('/') ? currentLocation : currentLocation + '/';
+const basePath = currentLocation.startsWith('/prueba') ? '/prueba/' : '/prueba';
 
 // Construir la ruta relativa al archivo "menu.html" según la ubicación actual
-const menuPath = basePath + 'pages/menu.html';
+const menuPath = basePath + '/pages/menu.html';
 
 fetch(menuPath)
   .then((response) => response.text())
