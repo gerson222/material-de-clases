@@ -161,8 +161,8 @@ section {
   margin-right: auto;
 }
 
+/* menor a sm */
 @media (max-width: 575px) {
-
   .dropdown-menu-center {
   left: 50% !important;
   transform: translateX(-50%) !important;
@@ -180,7 +180,7 @@ section {
 }
 
 
-
+/* pantalla sm */
 @media (min-width: 576px) {
   .p-responsive {
     padding: 1.5rem;
@@ -193,7 +193,7 @@ section {
     margin-top: -2rem;
   }
 }
-
+/* pantalla md */
 @media (min-width: 768px) {
   .p-responsive {
     padding: 2rem;
@@ -202,7 +202,7 @@ section {
     margin-top: 2rem;
   }
 }
-
+/* pantalla xl */
 @media (min-width: 992px) {
   .p-responsive {
     padding: 3rem;
@@ -211,7 +211,7 @@ section {
     margin-top: 3rem;
   }
 }
-
+/* pantalla xxl */
 @media (min-width: 1200px) {
   .p-responsive {
     padding: 4rem;
