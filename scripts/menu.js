@@ -1,5 +1,6 @@
 const currentLocation = window.location.pathname;
-const menuPath = currentLocation.endsWith('/') ? 'pages/menu.html' : '../pages/menu.html';
+const basePath = '/prueba/'; // Ruta base del proyecto
+const menuPath = currentLocation.endsWith(basePath) ? `${basePath}pages/menu.html` : `${basePath}pages/menu.html`;
 
 fetch(menuPath)
   .then((response) => response.text())
